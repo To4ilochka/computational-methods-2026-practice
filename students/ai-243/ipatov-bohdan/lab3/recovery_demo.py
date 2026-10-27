@@ -10,7 +10,7 @@ from lab_logger import custom_logger
 
 logger = custom_logger(config.LAB_LOGFILE_NAME)
 
-task = "Перевір у довіднику наявність книги 'Основи програмування' і скажи умови видачі."
+task = "Які правила видачі книги 'Основи програмування'? Подивись у довіднику книжок book_info."
 logger.info("\n" + "=" * 60)
 logger.info(f"=== provoke-X1 | очікується: помилка meaning (немає в CSV), виправлення на 'Основи алгоритмів'")
 with propagate_attributes(trace_name="provoke-X1", tags=["provoke"]):
